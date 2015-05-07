@@ -10,3 +10,5 @@ Basic CSS Test for Gaggle applicants.
 -- Blue: #263692;
 -- Gray: #666666;
 -- Light Gray: #eeeeee;
+
+Desired outcome can be seen at https://github.com/cornifex/gagglecsstest/wiki/Screenshots
