@@ -1,0 +1,174 @@
+$orange: #F26722;
+$blue: #263692;
+$gray: #666666;
+$lightgray: #eeeeee;
+$white: #ffffff;
+
+/* typography */
+body {
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 500;
+  color: $gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: $orange;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+p {
+  margin: .9em 0 .3em;
+  line-height: 1.4em;
+}
+
+
+/* layout */
+#branding {
+  padding: 2.5em 0;
+}
+
+#logo {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  max-width: 930px;
+  margin: 0 1.2em;
+
+  #banner img {
+    max-width: 100%;
+  }
+
+  .banner-content {
+    margin-top: .5em;
+  }
+}
+
+#content {
+
+  h2 {
+    margin-top: .8em;
+  }
+
+}
+
+#sidebar {
+  background-color: $blue;
+  margin-top: 1.3em;
+  color: $white;
+
+  h2 {
+    color: $white;
+    margin-top: .1em;
+  }
+
+  #news {
+      padding: .7em;
+
+      a {
+        color: $orange;
+        text-align: right;
+        display: block;
+      }
+  }
+}
+
+#navigation {
+  background-color: $blue;
+  margin-top: .3em;
+
+  a {
+    display: block;
+    text-align: center;
+    color: $white;
+    font-size: 1.5em;
+    padding: .6em;
+
+    &.active {
+      background-color: $orange;
+    }
+
+  }
+
+  #main-menu {
+    display: none;
+  }
+}
+
+#footer {
+  background-color: $gray;
+  padding: .4em 0 .9em;
+  margin-top: 1.3em;
+  color: white;
+  text-align: center;
+}
+
+/* desktop adjustments */
+@media (min-width: 930px) {
+  a#menu-toggle {
+    display: none;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  #navigation {
+    ul#main-menu {
+      display: block;
+      font-weight: 300;
+    }
+    li {
+      display: inline-block;
+      width: 19.7%
+    }
+  }
+
+  #banner {
+    position: relative;
+    box-shadow: 0 0.5em 0.7em -0.3em $gray;
+    padding-bottom: .2em;
+
+    .banner-content {
+      margin-top: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33%;
+      box-sizing: border-box;
+      background: rgba($orange, 0.8);
+      color: $white;
+      padding: 1.7em 1.3em;
+      height: 100%;
+    }
+
+    h2 {
+      color: $white;
+    }
+  }
+
+  #content {
+    padding: .6em;
+    width: 66%;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 2em;
+  }
+
+  #sidebar {
+    width: 33%;
+    float: right;
+    margin-right: .5em;
+  }
+
+  #footer {
+    clear: both;
+  }
+}
